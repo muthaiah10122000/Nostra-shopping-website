@@ -1,0 +1,313 @@
+body {
+
+    margin: 0;
+    padding: 0;
+    font-family: "Poppins", sans-serif;
+    font-style: normal;
+}
+
+.navbar {
+
+   display: flex;
+   justify-content: space-between;
+   align-items: center;
+   box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+
+}
+
+.navbar-links {
+
+    display: flex;
+    column-gap: 20px;
+    padding: 10px;
+}
+
+.navbar-links a {
+
+    text-decoration: none;
+    color: #1D232C;
+}
+
+.navbar-links a:hover {
+
+    text-decoration: underline;
+    color: green;
+}
+
+.navbar-menu-toggle {
+
+    display: none;
+}
+
+/* media query */
+
+@media screen and (max-width:700px) {
+
+    .navbar-menu-toggle {
+
+        display: block;
+    }
+
+    .navbar-links {
+
+        display: none;
+    }
+
+    .header-image {
+        display: none;
+    }
+
+    .service p {
+
+        display: none;
+    }
+
+    .service-container-2 {
+
+        flex-direction: column;
+    }
+}
+
+.side-navbar {
+
+    background-color: #1D232C;
+    position: fixed;
+    width: 50%;
+    height: 100%;
+    top: 0;
+    left: -60%;
+    padding: 20px;
+    color: white;
+    transition: 2s;
+}
+
+.sidenavbar-links a {
+
+    text-decoration: none;
+    color: white;
+    
+}
+
+.sidenavbar-link {
+
+    margin-bottom: 50px;
+}
+
+.sidenavbar-links a:hover {
+
+    text-decoration: underline;
+}
+
+.header img {
+
+    height: 300px;
+    width: 300px;
+}
+
+.header {
+
+    display: flex;
+    justify-content: center;
+    padding: 50px;
+    gap: 50px;
+}
+
+.header-button {
+
+    background-color: black;
+    color: white;
+    padding: 20px;
+    border-radius: 5px;
+    border: none;
+}
+
+.header-button:hover {
+
+    box-shadow: rgb(38, 57, 77) 0px 20px 30px -10px;
+}
+
+.service {
+
+    padding: 20px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.service-container-2 {
+
+    display: flex;
+    padding: 20px;
+    justify-content: space-between;
+    gap: 50px;
+}
+
+.service-container-2 div {
+
+    background-color: #f2f4f7;
+    border-radius: 5px;
+    padding: 10px;
+}
+
+.new-arrival img {
+
+    height: 200px;
+    width: 200px;
+}
+
+.new-arrival {
+
+    display: flex;
+    justify-content: space-between;
+    padding: 20px;
+    flex-wrap: wrap;
+}
+
+.new-arrival-container {
+
+    position: relative;
+    flex-basis: 20%;
+}
+
+.new-arrival-container button {
+
+    padding: 10px;
+    margin-top: 10px;
+    color: #1D232C;
+    position: absolute;
+    top: 50%;
+    left: 20%;
+    border-radius: 10px;
+    border: none;
+}
+
+.news {
+
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.news input {
+
+    width: 80vw;
+    border: solid black 3px;
+    height: 30px;
+    margin: 15px;
+    margin: 0px;
+}
+
+.news button {
+
+    padding: 10px;
+    border-radius: 5px;
+    border: none;
+    background-color: black;
+    color: white;
+    margin-bottom: 30px;
+}
+
+.news h2 {
+
+    margin: 0px;
+}
+
+.footer {
+
+    background-color: #1D232C;
+    color: white;
+    padding: 20px;
+}
+
+.news input:focus {
+
+    outline: none;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+}
+
+.products-box img {
+
+    height: 200px;
+    width: 200px;
+}
+
+.product-section input {
+
+    width: 80%;
+    height: 30px;
+    border-radius: 30px;
+    outline: solid black 1px;
+    margin: 20px;
+    padding: 5px;
+    margin-left: 100px;
+
+}
+
+.products {
+
+    display: flex;
+    flex-wrap: wrap;
+    gap: 50px;
+    justify-content: space-around;
+
+}
+
+.products-box {
+
+    margin: 20px;
+    flex-basis: 20%;
+    text-align: center;
+}
+
+.contactus-container {
+    background-color: #1D232C;
+    margin: 20px;
+    color: white;
+    width: 20%;
+    padding: 50px;
+    border-radius: 30px;
+    display: flex;
+    flex-direction: column;
+    overflow: scroll;
+
+}
+
+.contactus {
+
+    display: flex;
+    justify-content: center;
+
+}
+
+.contactus-container input, textarea {
+
+    padding: 5px;
+    border-radius: 20px;
+    margin-bottom: 10px;
+
+}
+
+.contactus-container button {
+
+    padding: 10px;
+    border-radius: 20px;
+    margin-top: 10px;
+    outline: none;
+
+}
+
+.contactus-container textarea {
+
+    height: 100px;
+}
+
+.contactus-container input, textarea:focus {
+
+   outline: none;
+
+}
+
+
+
+
